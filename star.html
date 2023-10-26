@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <style>
+            @font-face {
+                font-family: "star" ;
+                src: url("Starjedi.ttf") format("truetype");
+                font-weight: normal;
+                font-size: normal;
+            }
+            h1{
+                font-family: "star", Times, serif;
+                font-size: 3em;
+                font-weight: normal;
+            
+            }
+        </style>
+        <link rel="stylesheet" type="text/css" href="star.css">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="/css/all.min.css">
+        <meta name="videwport" content="width=device-width, initial-scale=1.0">
+        <script src="script.js" defer></script>
+        <title>Projeto Tcc</title>
+        
+</head>
+<header>
+        <div class ="house">
+            <a href ="/tcc.html"> <i id="casa" class="fa-solid fa-house"></i> </a>
+</div>
+    <center>
+    <h1> Escolha seu planeta </h1>
+    </center>
+</header>
+<body>
+
+    <div class="image-section">
+  <div class="star1">
+    <form action="mailto:tarcisiovianna2019@gmail.com" method="post" id="imageForm">
+        <input type="hidden" name="imagem" id="imagemInput">
+        <button type="submit" class="image-button">
+            <img class="image" src="/star3.jpeg" alt="Imagem 1" onclick="setImagemValue('Star1')">
+        </button>
+    </div>
+    </form>
+   
+    <div class="star2">
+    <form action="mailto:tarcisiovianna2019@gmail.com" method="post" id="imageForm2">
+        <input type="hidden" name="imagem" id="imagemInput2">
+        <button type="submit" class="image-button">
+            <img class="image" src="/star2.jpeg" alt="Imagem 2" onclick="setImagemValue('Star2')">
+        </button>
+    </form>
+</div>
+<div class="star3"> 
+    <form action="mailto:tarcisiovianna2019@gmail.com" method="post" id="imageForm3">
+        <input type="hidden" name="imagem" id="imagemInput3">
+        <button type="submit" class="image-button">
+            <img class="image" src="/star6.jpeg" alt="Imagem 3" onclick="setImagemValue('Star3')">
+        </button>
+    </form>
+</div>
+    </div>
+    
+<script>
+    function setImagemValue(imagem) {
+        document.getElementById('imagemInput').value = imagem;
+        document.getElementById('imagemInput2').value = imagem;
+        document.getElementById('imagemInput3').value = imagem;
+        document.getElementById('imageForm').submit();
+        document.getElementById('imageForm2').submit();
+        document.getElementById('imageForm3').submit();
+    }
+</script>
+
+<script src="scriptstar.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <style>
+         @font-face {
+                font-family: "bttf" ;
+                src: url("BTTF.ttf") format("truetype");
+                font-weight: normal;
+                font-size: normal;
+            }
+            h1{
+                font-family: "bttf", Times, serif;
+                font-size: 3em;
+                font-weight: normal;
+                color: aliceblue;
+            }
+    </style>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Experience</title>
+    <link rel="stylesheet" href="iten.css">
+   
+</head>
+<header>
+    <div class ="house">
+        <a href ="/tcc.html"> <i id="casa" class="fa-solid fa-house"></i> </a>
+</div>
+<center>
+    <h1> Para que ano vamos? </h1>
+    </center>
+</header>
+<body>
+    
+
+    <!-- Seção de imagens -->
+    <div class="image-section">
+      <div class="Devolta1">
+        <form action="mailto:tarcisiovianna2019@gmail.com" method="post" id="imageForm">
+            <input type="hidden" name="imagem" id="imagemInput">
+            <button type="submit" class="image-button">
+                <img class="image" src="WhatsApp Image 2023-09-17 at 15.01.32.jpeg" alt="Imagem 1" onclick="setImagemValue('bttf1')">
+            </button>
+        </form>
+      </div>
+        <div class="Devolta2">
+      <form action="mailto:tarcisiovianna2019@gmail.com" method="post" id="imageForm2">
+            <input type="hidden" name="imagem" id="imagemInput2">
+            <button type="submit" class="image-button">
+                <img class="image" src="WhatsApp Image 2023-09-17 at 15.02.12 (1).jpeg" alt="Imagem 1" onclick="setImagemValue('bttf2')">
+            </button>
+        </form>
+    </div>
+
+    <div class="Devolta3">
+        <form action="mailto:tarcisiovianna2019@gmail.com" method="post" id="imageForm3">
+            <input type="hidden" name="imagem" id="imagemInput3">
+            <button type="submit" class="image-button">
+                <img class="image" src="WhatsApp Image 2023-09-17 at 15.02.12.jpeg" alt="Imagem 1" onclick="setImagemValue('bttf3')">
+            </button>
+        </form>
+    </div>
+       
+    </div>
+
+    <script>
+        function setImagemValue(imagem) {
+            document.getElementById('imagemInput').value = imagem;
+            document.getElementById('imagemInput2').value = imagem;
+            document.getElementById('imagemInput3').value = imagem;
+            document.getElementById('imageForm').submit();
+            document.getElementById('imageForm2').submit();
+            document.getElementById('imageForm3').submit();
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

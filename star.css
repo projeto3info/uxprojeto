@@ -1,0 +1,127 @@
+body{
+    background-color: black;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh; 
+    background-image: url('https://i.pinimg.com/originals/48/22/d7/4822d7ea202e3996040af84a87c0a88e.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-section {
+
+    
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 200px; 
+    width: 900px;
+    height: 350px;
+   
+   
+}
+
+h1 {
+    color: aliceblue;
+}
+
+.image-button {
+    height: 450px;
+    object-fit: cover;
+    margin-left: 90px;
+    width: calc(168% / 3);
+    border-radius: 50%;
+    box-shadow: 3px 3px 8px rgb(240, 29, 29);
+
+}
+
+.image {
+    height: 450px;
+   
+    object-fit: cover;
+    margin-left: -8px;
+    width: calc(335% / 3);
+    border-radius: 50%;
+    box-shadow: 8px 1px 8px rgba(240, 29, 29, 0.555);
+    
+   
+
+}
+
+
+.wrapper i:first-child{
+        left: -23px;
+}
+
+.wrapper i:hover{
+    background-color: rgba(114, 154, 233, 0.356);
+    transition: 1s;
+}
+
+
+.wrapper i:last-child{
+    right: -23px;
+}
+
+.carrossel img{
+    height: 450px;
+    object-fit: cover;
+    margin-left: 14px;
+    width: calc(96% / 3);
+    border-radius: 50%;
+    box-shadow: 8px 1px 8px rgba(240, 29, 29, 0.555);
+    
+}
+
+.carrossel img:first-child{
+    margin-left: 4px;
+}
+
+.carrossel img:last-child{
+    margin-right: 9px;
+}
+
+.house i{
+    
+    
+    top: 50%;
+    height: 45px;
+    width: 50px;
+    left: 20px;
+    text-align: center;
+    line-height: 46px;
+    border-radius: 50%;
+    font-size: 125%;
+    position: absolute;
+    background: rgba(156, 202, 255, 0.849);
+    transform: translateY(-1000%);
+    
+}
+
+.star1:hover{
+    transform: scale(1.2);    
+}
+.star2:hover{
+    transform: scale(1.2);    
+}
+.star3:hover{
+    transform: scale(1.2);    
+}
+
+
+@media screen and (max-width: 900px){
+.carrossel img{
+    width: calc(100% / 2);
+}
+}
+
+@media screen and (max-width: 550px){
+    .carrossel img{
+        width: 100%
+    }
+    }
